@@ -2,7 +2,6 @@ from peewee import *
 from datetime import *
 from models import SearchContext, SearchRequest, db
 
-# db = SqliteDatabase('databases/initial.db')
 db.connect()
 
 # За кого болели больше - Испанию или Португалию?
