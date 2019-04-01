@@ -1,8 +1,8 @@
 from peewee import *
 from datetime import *
 import progressbar
+from models import SearchContext, SearchRequest, db
 
-db = SqliteDatabase('databases/initial.db')
 logfile = 'logs/football.dms'
 counter = 0
 
@@ -12,19 +12,6 @@ def log_length(logfile):
         next(file)
         for line in file: count += 1
     return count
-
-class SearchContext(Model):
-    class Meta:
-        database = db
-
-class SearchRequest(Model):
-    text = CharField()
-    date = DateField()
-    time = TimeField()
-    context = ForeignKeyField(SearchContext, backref='context')
-
-    class Meta:
-        database = db
 
 db.connect()
 db.create_tables([SearchContext, SearchRequest])
