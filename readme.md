@@ -6,6 +6,7 @@
 * В качестве базы данных для хранения результатов парсинга используется SQLite
 * Запросы в БД пишутся не напрямую, а с использованием ORM [peewee](http://docs.peewee-orm.com/en/latest/peewee/quickstart.html)
 * Для отображения прогресс-бара во время парсинга логов используется модуль [progressbar](https://github.com/niltonvolpato/python-progressbar)
+* Просмотреть содержимое БД database/initial.db можно с помощью [DB Browser for SQLite](https://sqlitebrowser.org/). Скачивается, установливается в систему, и в программе можно открыть файл с базой данных. 
 
 ### Установка нужных модулей в систему
 
