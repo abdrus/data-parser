@@ -12,8 +12,7 @@
 Чтобы иметь возможность запускать основные скрипты, требуется доустановить в систему `peewee` и `progressbar`.
 
 ```bash
-pip install peewee
-pip install progressbar
+pip install peewee progressbar
 ```
 
 ### Принцип работы
